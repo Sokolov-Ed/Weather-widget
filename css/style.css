@@ -1,0 +1,107 @@
+body {
+  background-color: #202020;
+}
+.widget {
+  margin: auto;
+  width: 900px;
+  height: 990px;
+  background: rgba(100, 100, 100, 0.5);
+  border: 5px solid #373737;
+  border-radius: 10px;
+  margin-top: 50px;
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+    0 0 40px violet, 0 0 50px violet, 0 0 60px violet;
+  animation: neonphone 2s infinite linear;
+  padding: 15px;
+  position: relative;
+  padding-right: 30px;
+}
+.name {
+  width: 175px;
+  border: 0px solid white;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 2.5px #ffffff, inset 0 0 5px #ffffff,
+    inset 0 0 10px #ffffff, inset 0 0 20px violet, inset 0 0 25px violet,
+    inset 0 0 30px violet;
+  position: absolute;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+h1 {
+  text-align: center;
+  color: rgba(250, 250, 250, 1);
+  font-size: 50px;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+    0 0 40px blue, 0 0 50px blue, 0 0 60px blue;
+}
+.flicker {
+  animation: flicker 1s infinite linear;
+}
+@keyframes flicker {
+  50% {
+    text-shadow: 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px blue,
+      0 0 0px blue, 0 0 0px blue;
+  }
+  100% {
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+      0 0 40px blue, 0 0 50px blue, 0 0 60px blue;
+  }
+}
+@keyframes neonphone {
+  50% {
+    box-shadow: 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff,
+      0 0 0px violet, 0 0 0px violet, 0 0 0px violet;
+  }
+  100% {
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+      0 0 40px violet, 0 0 50px violet, 0 0 60px violet;
+  }
+}
+.accordion {
+  color: white;
+  text-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 4px #ffffff;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #373737;
+  width: 270px;
+  margin-left: 415px;
+  margin-top: 15px;
+  box-shadow: inset 0 0 2px #ffffff, inset 0 0 4px #ffffff,
+    inset 0 0 8px #ffffff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.panel {
+  position: relative;
+  margin-left: 240px;
+  margin-top: 40px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+output {
+  display: flex;
+  margin-top: 5px;
+  color: white;
+  text-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 4px #ffffff;
+  font-size: 22px;
+  text-align: left;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: #373737;
+  box-shadow: inset 0 0 1px #ffffff, inset 0 0 2px #ffffff,
+    inset 0 0 4px #ffffff;
+  margin-bottom: 5px;
+}
+.icon {
+  margin: auto;
+  text-align: center;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
