@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Weather</title>
-  </head>
-  <body>
+</head>
+<body>
     <div class="widget">
         <div class="name">
-            <h1>W</br>
+            <h2>W</br>
             <font class="flicker">E</br>
             A</font></br>
             T</br>
@@ -21,27 +21,25 @@
             D</br>
             G</br>
             <font class="flicker">E</font></br>
-            T</br></h1>
+            T</br></h2>
         </div>
-        <button class="accordion" id="button1">Load Data</button>
-        <div class="panel" id="panel">
-            <output type="text" class="place-name"></output>
-            <output type="text" class="country-name"></output>
-            <output type="text" class="region-name"></output>
-            <output type="text" id = "location"></output>
+        <div class="dataField" id="dataField">
+            <div type="text" class="output place-name"></div>
+            <div type="text" class="output country-name"></div>
+            <div type="text" class="output region-name"></div>
+            <div type="text" id = "location" class="output"></div>
             <div class="icon"></div>
-            <output type="text" class="date_and_time"></output>
-            <output type="text" class="temp"></output>
-            <output type="text" class="feels_like_temperature"></output>
-            <output type="text" class="weather_text"></output>
-            <output type="text" class="wind_speed"></output>
-            <output type="text" class="direction_wind"></output>
-            <output type="text" class="humidity"></output>
-            <output type="text" class="cloudiness"></output>
-            <output type="text" class="gust_wind"></output>
+            <div type="text" class="output date_and_time"></div>
+            <div type="text" class="output temp"></div>
+            <div type="text" class="output feels_like_temperature"></div>
+            <div type="text" class="output weather_text"></div>
+            <div type="text" class="output wind_speed"></div>
+            <div type="text" class="output direction_wind"></div>
+            <div type="text" class="output humidity"></div>
+            <div type="text" class="output cloudiness"></div>
+            <div type="text" class="output gust_wind"></div>
         </div>
-    </div>
-    <script src="js/script.js">
-    </script>
-  </body>
+        <div id="dataIsEmpty"></div>
+        <script src="js/script.js"></script>
+</body>
 </html>
